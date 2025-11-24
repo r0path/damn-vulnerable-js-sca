@@ -21,7 +21,8 @@
   "overrides": {
     "secure-password": {
       "sodium-native": "3.3.0"
-    }
+    },
+    "path-to-regexp": "0.1.12"
   },
   "engines": {
     "node": "^18.12.0",

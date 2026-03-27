@@ -18,10 +18,7 @@ export const verify = (token) => jwtVerify(token, JWT_SECRET)
 const auth = handleRejection(async (req, res, next) => {
   const authHeader = req.get('Authorization')
   if (!authHeader) {
-    // NOTE(matija): for now we let tokenless requests through and make it operation's
-    // responsibility to verify whether the request is authenticated or not. In the future
-    // we will develop our own system at Wasp-level for that.
-    return next()
+    return res.status(401).json({ error: 'Authorization header missing' })
   }
 
   if (authHeader.startsWith('Bearer ')) {

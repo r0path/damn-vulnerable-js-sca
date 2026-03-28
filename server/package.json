@@ -19,6 +19,7 @@
   },
   "engineStrict": true,
   "overrides": {
+    "jws": "3.2.3",
     "secure-password": {
       "sodium-native": "3.3.0"
     }

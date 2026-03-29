@@ -21,7 +21,8 @@
   "overrides": {
     "secure-password": {
       "sodium-native": "3.3.0"
-    }
+    },
+    "cross-spawn": "7.0.5"
   },
   "engines": {
     "node": "^18.12.0",

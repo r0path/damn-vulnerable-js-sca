@@ -21,7 +21,8 @@
   "overrides": {
     "secure-password": {
       "sodium-native": "3.3.0"
-    }
+    },
+    "braces": "3.0.3"
   },
   "engines": {
     "node": "^18.12.0",

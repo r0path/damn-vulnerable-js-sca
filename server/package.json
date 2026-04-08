@@ -41,6 +41,7 @@
   "lodash": "^4.17.21",
   "baseui": "12.2.0",
   "jquery": "3.4.0",
+  "underscore.string": "^3.3.5",
   "js-yaml": "2.0.0",
   "puppeteer": "1.12.0",
   "react-markdown": "^8.0.5",

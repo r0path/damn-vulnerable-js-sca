@@ -4,10 +4,10 @@ import AuthError from '../../core/AuthError.js'
 import HttpError from '../../core/HttpError.js'
 
 export default handleRejection(async (req, res) => {
-  const userFields = req.body || {}
+  const { username, password } = req.body || {}
 
   try {
-    await prisma.user.create({ data: userFields })
+    await prisma.user.create({ data: { username, password } })
   } catch (e) {
     if (e instanceof AuthError) {
       throw new HttpError(422, 'Validation failed', { message: e.message })
